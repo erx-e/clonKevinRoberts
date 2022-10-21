@@ -1,0 +1,262 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: 'Antonio-Regular';
+  src: url(./fonts/Antonio-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Antonio-Bold';
+  src: url(./fonts/Antonio-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Antonio-Light';
+  src: url(./fonts/Antonio-Light.ttf);
+}
+
+.header{
+  width: 100%;
+  height: 72px;
+}
+
+
+.header__nav{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 72px;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  padding-right: 18px;
+  /* padding-right: 29px; */
+  padding-left: 18px;
+  background-color: rgb(8,137,160);
+  border-bottom: 1px solid rgb(47,46,46);
+  z-index: 1;
+}
+
+.header__logo>svg{
+  width: 139px;
+  height: 54px;
+}
+
+.header__menu{
+  z-index: 1;
+}
+
+.header__menu>span{
+  display: block;
+  background-color: black;
+  width: 26px;
+  height: 2px;
+}
+
+/* 
+.menu__overlay{
+  position: fixed;
+  background-color: white;
+  width: 305px;
+  height: 100vh;
+  top: 0;
+  left: 55px;
+  right: 0;
+  bottom: 0;
+} */
+
+.header__menu>span:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.portada{
+  display: flex;
+  height: 243px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.portada__img{
+  width: 100vw;
+  height: 243px;
+}
+
+.portada__text{
+  display: inline-flex;
+  position: absolute;
+  flex-direction: column;
+  margin-right: 28.5px;
+  font-family: 'Antonio-Regular';
+  font-weight: 400;
+  color: white;
+  align-items: flex-end;
+  font-size: 15px;
+}
+
+.portada__text :first-child{
+  font-size: 59px;
+  font-family: 'Antonio-Bold';
+  position: relative;
+  text-align: right;
+  letter-spacing: 2.95px;
+  width: 75px;
+  position: relative;
+  bottom: 6px;
+}
+
+.portada__text :nth-child(2){
+  text-align: right;
+  font-size: 15px;
+  position: relative;
+  bottom: 15px;
+  letter-spacing: 0.75px;
+  line-height: 1.2em;
+  position: relative;
+  bottom: 17px;
+}
+
+.portada__text :last-child{
+  text-align: right;
+  font-size: 15px;
+  position: relative;
+  letter-spacing: 0.75px;
+  line-height: 1.2em;
+}
+
+.main{
+  margin-top: 29px;
+  margin-left: 21px;
+  margin-right: 21px;
+}
+
+.servicios-sect{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicios-sect__title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 27px;
+  font-family: 'Antonio-Bold';
+  color: rgb(5, 64,97);
+}
+
+.servicios-sect1,
+.servicios-sect2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicios-sect1__title,
+.servicios-sect2__title{
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Antonio-Bold';
+  margin-bottom: 5px;
+  color: rgb(8,137,160);
+}
+
+.servicios-sect1__text, 
+.servicios-sect2__text{
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: justify;
+  margin-bottom: 22px;
+}
+
+.servicios-sect1__img, 
+.servicios-sect2__img{
+  width: 277px;
+  height: 172px;
+  margin-bottom: 14px;
+}
+
+
+.nosotros-sect{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.nosotros-sect__title{
+  font-size: 35px;
+  font-family: 'Antonio-Bold';
+  color: rgb(5, 64,97);
+  align-self: flex-start;
+}
+
+.nosotros-sect__text{
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 21px;
+}
+
+.nosotros-sect__img{
+  width: 300px;
+  height: 217px;
+  align-self: flex-end;
+}
+
+.mision-vision-sect{
+  position: relative;
+  top: 24px;
+  margin-top: 24px;
+  margin-bottom: 23px;
+}
+
+.mision-sect,
+.vision-sect{
+  background-color: rgb(5, 64,97);
+  padding: 10px 10px 14px;
+}
+
+.mision-sect{
+  margin-top: 24px;
+  margin-bottom: 22px;
+}
+
+.vision-sect{
+  margin-bottom: 20px;
+}
+
+.mision-sect__title,
+.vision-sect__title{
+  font-family: 'Antonio-Bold';
+  color:rgb(227, 98,14);
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.mision-sect__text,
+.vision-sect__text{
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(8,137,160);
+  line-height: 1.12;
+}
+
+.hide-for-mobile{
+  display: none;
+}
